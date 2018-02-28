@@ -10,7 +10,7 @@ function destructivelyAddElementToBeginningOfArray(array, element){
 }
 
 function addElementToEndOfArray(array, element){
-  return [...aray, element];
+  return [...array, element];
 }
 
 function destructivelyAddElementToEndOfArray(array, element){
@@ -20,4 +20,24 @@ function destructivelyAddElementToEndOfArray(array, element){
 
 function accessElementInArray(array, element){
   return array[element];
+}
+
+function destructivelyRemoveElementFromBeginningOfArray(array){
+  array.shift(0);
+  return array
+}
+
+function removeElementFromBeginningOfArray(array){
+  array.slice(0);
+  return array
+}
+
+function destructivelyRemoveElementFromEndOfArray(array){
+  array.pop();
+  return array
+}
+
+function removeElementFromEndOfArray(array){
+  array.slice(0, array.length() - 1)
+  return array
 }
